@@ -17,7 +17,7 @@ public class InputManager : MonoBehaviour
         Cursor.visible = false;
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         playerInput = new PlayerInput();
-        onFoot = playerInput.OnFoot;
+        onFoot = playerInput.onFoot;
         motor = GetComponent<PlayerMotor>();
         look = GetComponent<PlayerLook>();
         onFoot.Jump.performed += cts => motor.Jump();

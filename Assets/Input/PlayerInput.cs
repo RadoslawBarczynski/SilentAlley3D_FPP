@@ -948,7 +948,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
             }
         }
     }
-    public OnFootActions @OnFoot => new OnFootActions(this);
+    public OnFootActions onFoot => new OnFootActions(this);
 
     // UI
     private readonly InputActionMap m_UI;

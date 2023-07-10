@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerMotor : MonoBehaviour
 {
-    private CharacterController controller;
+    public CharacterController controller;
     private Vector3 playerVelocity;
     private bool isGrounded;
     public float speed = 3f;

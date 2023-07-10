@@ -10,7 +10,7 @@ public class WeaponSway : MonoBehaviour
     [SerializeField] float maxTurn = 3f;
     //[SerializeField] private InputManager inputManager;
     public PlayerInput playerInput;
-    public PlayerInput.OnFootActions onFoot;
+    public PlayerInput.OnFootActions OnFoot;
 
 
     private void OnEnable()
@@ -21,7 +21,7 @@ public class WeaponSway : MonoBehaviour
     void Update()
     {
         //Vector2 mouseInput = inputManager.onFoot.Look.ReadValue<Vector2>();
-        Vector2 mouseInput = playerInput.OnFoot.MouseSway.ReadValue<Vector2>();
+        Vector2 mouseInput = playerInput.onFoot.MouseSway.ReadValue<Vector2>();
 
         ApplyRotation(GetRotation(mouseInput));
     }
